@@ -15,6 +15,10 @@ class IndexController extends Yaf\Controller_Abstract
     {
         echo $this->getRequest()->controller.'<br/>';
         echo $this->getRequest()->action.'<br/>';
+        if($this->getRequest()->action != 'index') {
+            exit('禁止访问');
+        }
+
     }
 
     // default action name
