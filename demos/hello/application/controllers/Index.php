@@ -6,7 +6,7 @@
  * Time: 5:35 PM
  */
 
-class IndexController extends Yaf_Controller_Abstract
+class IndexController extends Yaf\Controller_Abstract
 {
     // default action name
     public function indexAction()
