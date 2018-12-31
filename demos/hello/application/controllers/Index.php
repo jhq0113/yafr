@@ -11,7 +11,7 @@ class IndexController extends Yaf\Controller_Abstract
     public function indexAction()
     {
         try {
-            $object = new \services\BaseServices();
+            $object = new services\BaseServices();
             $object->name = 'sdfasfd';
             echo $object->name;die;
         }catch (\Exception $exception) {
