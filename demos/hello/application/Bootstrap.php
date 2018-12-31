@@ -10,7 +10,7 @@
  * Class Bootstrap
  * User Jiang Haiqiang
  */
-class Bootstrap
+class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
     /**
      * @param \Yaf\Dispatcher $dispatcher
