@@ -7,12 +7,6 @@
  */
 class IndexController extends Yaf\Controller_Abstract
 {
-    public function init()
-    {
-        echo $this->getRequest()->controller;
-        echo $this->getRequest()->action;
-    }
-
     // default action name
     public function indexAction()
     {
