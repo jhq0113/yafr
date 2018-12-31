@@ -6,14 +6,14 @@
  * Time: 1:12 PM
  */
 
-namespace models;
+namespace modelss;
 
 /**
  * Class BaseModel
  * @package models
  * User Jiang Haiqiang
  */
-class BaseModel
+class BaseModels
 {
     /**
      * @var string
