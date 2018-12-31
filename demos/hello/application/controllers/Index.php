@@ -10,7 +10,7 @@ class IndexController extends Yaf\Controller_Abstract
     // default action name
     public function indexAction()
     {
-        $model = new \models\BaseModel('test');
+        $model = new models\BaseModel('test');
 
         $this->getView()->content = $model->tableName;
     }
