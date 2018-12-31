@@ -16,7 +16,7 @@ class IndexController extends Yaf\Controller_Abstract
 
         //$this->getView()->content = $adapter->name;
 
-        $config = \Yaf\Application::app()->getConfig();
+        $config = \Yaf\Application::app()->getConfig()->toArray();
         echo json_encode($config);
         die;
     }
