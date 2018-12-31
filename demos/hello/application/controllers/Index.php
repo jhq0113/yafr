@@ -12,8 +12,12 @@ class IndexController extends Yaf\Controller_Abstract
     {
         //$service = new \service\BaseService('dbName');
 
-        $adapter = new \adapter\BaseAdapter('testAdapter');
+        //$adapter = new \adapter\BaseAdapter('testAdapter');
 
-        $this->getView()->content = $adapter->name;
+        //$this->getView()->content = $adapter->name;
+
+        $config = \Yaf\Application::app()->getConfig();
+        echo json_encode($config);
+        die;
     }
 }
