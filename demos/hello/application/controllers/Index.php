@@ -12,6 +12,9 @@ class IndexController extends Yaf\Controller_Abstract
     public function indexAction()
     {
         //$this->getView()->content = "Hello World";
+        $config = \Yaf\Application::app()->getConfig();
+
+        var_dump($config);die;
 
         $object = new \com\BaseObject("Hello World!");
 
