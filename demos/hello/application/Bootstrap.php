@@ -17,18 +17,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
      */
-    public function __initConfig(\Yaf\Dispatcher $dispatcher)
-    {
-        echo __FUNCTION__.PHP_EOL;
-        die;
-    }
-
-    /**
-     * @param \Yaf\Dispatcher $dispatcher
-     * @author Jiang Haiqiang
-     * @email  jhq0113@163.com
-     */
-    public function __initDb(\Yaf\Dispatcher $dispatcher)
+    public function _initConfig(\Yaf\Dispatcher $dispatcher)
     {
         echo __FUNCTION__.PHP_EOL;
     }
@@ -38,7 +27,17 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
      */
-    public function __initComponents(\Yaf\Dispatcher $dispatcher)
+    public function _initDb(\Yaf\Dispatcher $dispatcher)
+    {
+        echo __FUNCTION__.PHP_EOL;
+    }
+
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initComponents(\Yaf\Dispatcher $dispatcher)
     {
         echo __FUNCTION__.PHP_EOL;
     }
