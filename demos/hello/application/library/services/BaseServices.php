@@ -3,15 +3,13 @@
  * Created by PhpStorm.
  * User: Jiang Haiqiang
  * Date: 2018/12/31
- * Time: 12:31 PM
+ * Time: 12:44 PM
  */
 
-namespace models;
+namespace services;
 
 
-class BaseModel
+class BaseServices
 {
     public $name;
-
-
 }
