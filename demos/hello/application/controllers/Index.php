@@ -7,6 +7,16 @@
  */
 class IndexController extends Yaf\Controller_Abstract
 {
+    /**
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function init()
+    {
+        echo $this->getRequest()->controller.'<br/>';
+        echo $this->getRequest()->action.'<br/>';
+    }
+
     // default action name
     public function indexAction()
     {
