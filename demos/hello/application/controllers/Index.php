@@ -10,9 +10,7 @@ class IndexController extends Yaf_Controller_Abstract
     // default action name
     public function indexAction()
     {
-        echo 'adfasd';die;
-
-        $object = new \models\BaseModel();
+        $object = new models\BaseModel();
         $object->name = 'sdfasfd';
         echo $object->name;die;
 
