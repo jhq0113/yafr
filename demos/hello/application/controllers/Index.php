@@ -10,12 +10,10 @@ class IndexController extends Yaf\Controller_Abstract
     // default action name
     public function indexAction()
     {
-        echo YAF_VERSION;
-        echo YAF_ENVIRON;
-        die;
+        //$service = new \service\BaseService('dbName');
 
-        $service = new \service\BaseService('dbName');
+        $adapter = new \adapter\BaseAdapter('testAdapter');
 
-        $this->getView()->content = $service->db;
+        $this->getView()->content = $adapter->name;
     }
 }
