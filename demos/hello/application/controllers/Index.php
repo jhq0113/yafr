@@ -13,6 +13,7 @@ class IndexController extends Yaf\Controller_Abstract
 
         echo $this->getRequest()->controller;
         echo $this->getRequest()->action;
+        return true;
     }
 
     // default action name
