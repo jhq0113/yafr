@@ -13,7 +13,7 @@ class IndexController extends Yaf\Controller_Abstract
     {
         //$this->getView()->content = "Hello World";
 
-        $object = new \com\BaseObject("Hello World");
+        $object = new \com\BaseObject("Hello World!");
 
         $this->getView()->content = $object->name;
     }
