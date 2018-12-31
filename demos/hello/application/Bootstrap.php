@@ -20,6 +20,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     public function __initConfig(\Yaf\Dispatcher $dispatcher)
     {
         echo __FUNCTION__.PHP_EOL;
+        die;
     }
 
     /**
