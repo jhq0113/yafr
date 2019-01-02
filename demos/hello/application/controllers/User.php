@@ -24,7 +24,7 @@ class UserController extends \Yaf\Controller_Abstract
             }
         }
 
-        $this->display('form',[
+        return $this->display('form',[
             'userName' => $userName
         ]);
     }
