@@ -15,7 +15,7 @@ class UserController extends \Yaf\Controller_Abstract
     public function loginAction()
     {
         if($this->_request->isPost()) {
-            $userName = $this->getRequest()->getParam('userName','');
+            $userName = $this->getRequest()->getPost('userName','');
 
             if($userName == 'jhq0113') {
                 return $this->forward('index','index',[
