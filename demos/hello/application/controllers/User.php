@@ -14,7 +14,9 @@ class UserController extends \Yaf\Controller_Abstract
      */
     public function loginAction()
     {
-        if($this->_request->isPost()) {
+        $userName = '';
+
+        if($this->getRequest()->isPost()) {
             $userName = $this->getRequest()->getPost('userName','');
 
             if($userName == 'jhq0113') {
