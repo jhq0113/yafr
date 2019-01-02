@@ -29,5 +29,6 @@ class UserController extends \Yaf\Controller_Abstract
         $this->getView()->display('user/form.phtml',[
             'userName' => $userName
         ]);
+        exit();
     }
 }
