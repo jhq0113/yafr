@@ -18,7 +18,7 @@ class UserController extends \Yaf\Controller_Abstract
             $userName = $this->getRequest()->getPost('userName','');
 
             if($userName == 'jhq0113') {
-                \Yaf\Dispatcher::getInstance()->forward(null,'Index','index',[
+                $this->forward(null,'Index','index',[
                     'userName' => $userName
                 ]);
                 exit();
