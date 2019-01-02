@@ -13,6 +13,7 @@ class IndexController extends Yaf\Controller_Abstract
      */
     public function init()
     {
+        echo $this->_request->module.'<br/>';
         echo $this->getRequest()->controller.'<br/>';
         echo $this->getRequest()->action.'<br/>';
         if($this->getRequest()->action != 'index') {
