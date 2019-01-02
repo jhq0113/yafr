@@ -14,8 +14,6 @@ class UserController extends \Yaf\Controller_Abstract
      */
     public function loginAction()
     {
-        $userName = '';
-
         if($this->getRequest()->isPost()) {
             $userName = $this->getRequest()->getPost('userName','');
 
@@ -29,6 +27,7 @@ class UserController extends \Yaf\Controller_Abstract
         $this->getView()->display('user/form.phtml',[
             'userName' => $userName
         ]);
-        exit();
+
+        \Yaf\Dispatcher::getInstance()->autoRender(false);
     }
 }
