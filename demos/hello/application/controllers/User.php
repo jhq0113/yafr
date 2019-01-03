@@ -42,8 +42,12 @@ class UserController extends \Yaf\Controller_Abstract
         //var_dump($userId);
 
         $this->_response->setBody('Hello World!');
-        $this->_response->response();
 
+        $this->_response->prependBody('Yaf<br/>');
+
+        $this->_response->appendBody('Thanks');
+
+        $this->_response->response();
         die;
     }
 }
