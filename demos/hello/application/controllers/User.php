@@ -58,7 +58,7 @@ class UserController extends \Yaf\Controller_Abstract
         //$this->forward('Index','index');
 
         //redirect
-        $this->redirect('/');
+        //$this->redirect('/');
 
         $result = $this->render('info',[
             'userName' => time(),
