@@ -47,7 +47,15 @@ class UserController extends \Yaf\Controller_Abstract
         $this->_response->appendBody('Thanks');
 
         $this->_response->response();*/
-        $this->forward('for');
+
+        //forward跳转
+        /* <b>Notice, there are 3 available method signatures:</b>
+	 * <p>\Yaf\Controller_Abstract::forward ( string $module , string $controller , string $action [, array $parameters ] )</p>
+	 * <p>\Yaf\Controller_Abstract::forward ( string $controller , string $action [, array $parameters ] )</p>
+	 * <p>\Yaf\Controller_Abstract::forward ( string $action [, array $parameters ] )</p>*/
+
+        //$this->forward('for');
+        $this->forward('Index','index');
 
         \Yaf\Dispatcher::getInstance()->autoRender(false);
     }
