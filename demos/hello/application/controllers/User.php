@@ -10,7 +10,7 @@
  * Class User
  * User Jiang Haiqiang
  */
-class User extends \Yaf\Controller_Abstract
+class UserController extends \Yaf\Controller_Abstract
 {
     /**
      * @author Jiang Haiqiang
