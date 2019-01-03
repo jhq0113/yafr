@@ -37,8 +37,11 @@ class UserController extends \Yaf\Controller_Abstract
         //$userId = $this->_request->getQuery('id','0');
         //var_dump($userId);
 
-        $userId = $this->_request->getPost('id','0');
-        var_dump($userId);
+        //获取$_POST中的值
+        //$userId = $this->_request->getPost('id','0');
+        //var_dump($userId);
+
+        $this->_response->setBody('Hello World!');
 
 
         die;
