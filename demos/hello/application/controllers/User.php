@@ -85,7 +85,7 @@ class UserController extends \Yaf\Controller_Abstract
 
     public function forAction()
     {
-        $result = $this->_view->render('info.phtml',[
+        $result = $this->_view->render('user/info.phtml',[
             'userName' => time(),
             'content'  => uniqid('content')
         ]);
