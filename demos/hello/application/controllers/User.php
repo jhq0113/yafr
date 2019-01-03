@@ -55,7 +55,9 @@ class UserController extends \Yaf\Controller_Abstract
 	 * <p>\Yaf\Controller_Abstract::forward ( string $action [, array $parameters ] )</p>*/
 
         //$this->forward('for');
-        $this->forward('Index','index');
+        //$this->forward('Index','index');
+
+        $this->redirect('/');
 
         \Yaf\Dispatcher::getInstance()->autoRender(false);
     }
