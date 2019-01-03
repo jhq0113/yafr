@@ -28,9 +28,14 @@ class UserController extends \Yaf\Controller_Abstract
         //获取当期请求action
         //var_dump($this->_request->action);
 
-        $ip = $this->_request->getServer('REMOTE_ADDR','');
+        //获取$_SERVER中的信息
+        //$ip = $this->_request->getServer('REMOTE_ADDR','');
 
-        var_dump($ip);
+        //var_dump($ip);
+
+        $userId = $this->_request->getQuery('id','0');
+        var_dump($userId);
+
         die;
     }
 }
