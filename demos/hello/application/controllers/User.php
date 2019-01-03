@@ -14,17 +14,31 @@ class UserController extends \Yaf\Controller_Abstract
      */
     public function loginAction()
     {
-        if($this->getRequest()->isPost()) {
+        echo $this->_module.'<br/>';
+        echo $this->_name.'<br/>';
+
+        /*$body = $this->render('form',[
+            'userName' => time()
+        ]);*/
+
+        //$this->_response->setBody($body);
+        //$this->_response->prependBody('header'.'<br/>');
+        //$this->_response->appendBody('footer'.'<br/>');
+
+
+        //$this->_response->response();
+        //\Yaf\Dispatcher::getInstance()->autoRender(false);
+
+        //return;
+
+        if($this->_request->isPost()) {
             $userName = $this->getRequest()->getPost('userName','');
 
             if($userName == 'jhq0113') {
-                $this->forward(null,'Index','index',[
+                \Yaf\Dispatcher::getInstance()->autoRender(false);
+                $this->forward('for',[
                     'userName' => $userName
                 ]);
-
-                \Yaf\Dispatcher::getInstance()->autoRender(false);
-
-                die;
             }
 
         }
@@ -33,6 +47,11 @@ class UserController extends \Yaf\Controller_Abstract
             'userName' => $userName
         ]);
 
-        \Yaf\Dispatcher::getInstance()->autoRender(false);
+
+    }
+
+    public function forAction()
+    {
+        echo 'for';
     }
 }
