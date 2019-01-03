@@ -1,19 +1,3 @@
-## [目录](https://github.com/jhq0113/yafr/blob/master/docs/index.md)
-
-## [6.Controller](https://github.com/jhq0113/yafr/blob/master/docs/yaf/6.Controller.md)
-
-# View
-
-## 1.基类\Yaf\View_Interface
-
-### 1.1 方法
-|名称|返回值类型|含义|
-|:--|:-------|:---|
-|render|string|渲染视图，返回渲染结果|
-|display|bool|渲染并显示视图|
-
-### 1.2 layout
-```php
 <?php
 /**
  * Created by PhpStorm.
@@ -104,4 +88,3 @@ class ControllerLayout extends Controller_Abstract
         return $result;
     }
 }
-```

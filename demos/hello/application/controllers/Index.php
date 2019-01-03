@@ -5,7 +5,7 @@
  * Date: 2018/12/30
  * Time: 5:35 PM
  */
-class IndexController extends Yaf\Controller_Abstract
+class IndexController extends \extend\ControllerLayout
 {
     /**
      * @author Jiang Haiqiang
@@ -13,8 +13,8 @@ class IndexController extends Yaf\Controller_Abstract
      */
     public function init()
     {
-        echo $this->getRequest()->controller.'<br/>';
-        echo $this->getRequest()->action.'<br/>';
+        //echo $this->getRequest()->controller.'<br/>';
+        //echo $this->getRequest()->action.'<br/>';
         if($this->getRequest()->action != 'index') {
             exit('禁止访问');
         }
@@ -28,10 +28,15 @@ class IndexController extends Yaf\Controller_Abstract
 
         //$adapter = new \adapter\BaseAdapter('testAdapter');
 
-        //$this->getView()->content = $adapter->name;
+        $this->_view->assign(['content' => 'Hello World']);
+        /*$result = $this->render('index',[
+            'content' => 'Hello World'
+        ]);
 
-        $config = \Yaf\Application::app()->getConfig()->toArray();
-        echo json_encode($config);
-        die;
+        echo $result;
+        die;*/
+        $this->display('index',[
+            'forbidLayout' => false
+        ]);
     }
 }

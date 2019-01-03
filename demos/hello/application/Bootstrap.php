@@ -8,30 +8,5 @@
 
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
-    /**
-     * @author Jiang Haiqiang
-     * @email  jhq0113@163.com
-     */
-    public function _initDb()
-    {
-        echo __FUNCTION__.'<br/>';
-    }
 
-    /**
-     * @author Jiang Haiqiang
-     * @email  jhq0113@163.com
-     */
-    public function _initComponents()
-    {
-        echo __FUNCTION__.'<br/>';
-    }
-
-    /**
-     * @author Jiang Haiqiang
-     * @email  jhq0113@163.com
-     */
-    public function _initTest()
-    {
-        echo __FUNCTION__.'<br/>';
-    }
 }
