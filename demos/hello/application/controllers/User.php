@@ -18,7 +18,7 @@ class UserController extends \Yaf\Controller_Abstract
      */
     public function infoAction()
     {
-        var_dump($this->_module);
+        var_dump($this->_module,$this->_name);
         die;
     }
 }
