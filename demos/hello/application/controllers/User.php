@@ -42,7 +42,7 @@ class UserController extends \Yaf\Controller_Abstract
         //var_dump($userId);
 
         $this->_response->setBody('Hello World!');
-
+        $this->_response->response();
 
         die;
     }
