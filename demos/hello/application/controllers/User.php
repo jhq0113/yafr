@@ -85,6 +85,12 @@ class UserController extends \Yaf\Controller_Abstract
 
     public function forAction()
     {
-        exit('forward');
+        $result = $this->_view->render('info',[
+            'userName' => time(),
+            'content'  => uniqid('content')
+        ]);
+
+        echo $result;
+        die;
     }
 }
