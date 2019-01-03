@@ -57,7 +57,15 @@ class UserController extends \Yaf\Controller_Abstract
         //$this->forward('for');
         //$this->forward('Index','index');
 
+        //redirect
         $this->redirect('/');
+
+        $result = $this->render('info',[
+            'userName' => time(),
+            'content'  => uniqid('content')
+        ]);
+
+        echo $result;
 
         \Yaf\Dispatcher::getInstance()->autoRender(false);
     }
