@@ -40,14 +40,21 @@ class UserController extends \Yaf\Controller_Abstract
         //获取$_POST中的值
         //$userId = $this->_request->getPost('id','0');
         //var_dump($userId);
-
-        $this->_response->setBody('Hello World!');
+        /*$this->_response->setBody('Hello World!');
 
         $this->_response->prependBody('Yaf<br/>');
 
         $this->_response->appendBody('Thanks');
 
-        $this->_response->response();
-        die;
+        $this->_response->response();*/
+        $this->forward('for');
+
+
+
+    }
+
+    public function forAction()
+    {
+        exit('forward');
     }
 }
