@@ -85,15 +85,24 @@ class UserController extends \Yaf\Controller_Abstract
 
     public function forAction()
     {
-        $path = $this->_view->getScriptPath();
-        exit($path);
+        //视图的根目录
+        //$path = $this->_view->getScriptPath();
+        //exit($path);
 
-        $result = $this->_view->render('user/info.phtml',[
+        //render渲染的是目录下的文件
+        /*$result = $this->_view->render('user/info.phtml',[
             'userName' => time(),
             'content'  => uniqid('content')
         ]);
 
-        echo $result;
+         echo $result;
+        */
+
+        $this->_view->display('user/info.phtml',[
+            'userName' => time(),
+            'content'  => uniqid('content')
+        ]);
+
         die;
     }
 }
