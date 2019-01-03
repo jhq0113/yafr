@@ -74,6 +74,7 @@ class UserController extends \Yaf\Controller_Abstract
             'content'  => uniqid('content')
         ]);*/
 
+        //控制器向view传递参数
         $this->_view->assign([
             'userName' => time(),
             'content'  => uniqid('content')
