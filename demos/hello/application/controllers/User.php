@@ -33,8 +33,13 @@ class UserController extends \Yaf\Controller_Abstract
 
         //var_dump($ip);
 
-        $userId = $this->_request->getQuery('id','0');
+        //获取$_GET中的值
+        //$userId = $this->_request->getQuery('id','0');
+        //var_dump($userId);
+
+        $userId = $this->_request->getPost('id','0');
         var_dump($userId);
+
 
         die;
     }
