@@ -98,10 +98,10 @@ class UserController extends \Yaf\Controller_Abstract
          echo $result;
         */
 
-        $this->_view->display('index/info.phtml',[
+        /*$this->_view->display('index/info.phtml',[
             'userName' => time(),
             'content'  => uniqid('content')
-        ]);
+        ]);*/
 
         die;
     }
