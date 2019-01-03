@@ -35,8 +35,5 @@ class IndexController extends \extend\ControllerLayout
 
         echo $result;
         die;*/
-        $this->display('index',[
-            'forbidLayout' => false
-        ]);
     }
 }
