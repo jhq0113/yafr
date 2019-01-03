@@ -18,10 +18,14 @@ class UserController extends \Yaf\Controller_Abstract
      */
     public function infoAction()
     {
+        //模块和控制器名称
         //var_dump($this->_module,$this->_name);
 
-        $isGet = $this->_request->isGet();
-        var_dump($isGet);
+        //获取请求方式
+        //$isGet = $this->_request->isGet();
+        //var_dump($isGet);
+
+        var_dump($this->_request->action);
         die;
     }
 }
