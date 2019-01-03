@@ -49,8 +49,7 @@ class UserController extends \Yaf\Controller_Abstract
         $this->_response->response();*/
         $this->forward('for');
 
-
-
+        \Yaf\Dispatcher::getInstance()->autoRender(false);
     }
 
     public function forAction()
