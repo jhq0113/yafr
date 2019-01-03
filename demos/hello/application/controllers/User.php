@@ -60,6 +60,7 @@ class UserController extends \Yaf\Controller_Abstract
         //redirect
         //$this->redirect('/');
 
+        //render
         /*$result = $this->render('info',[
             'userName' => time(),
             'content'  => uniqid('content')
@@ -67,12 +68,18 @@ class UserController extends \Yaf\Controller_Abstract
 
         echo $result;*/
 
-        $this->display('info',[
+        //display
+        /*$this->display('info',[
+            'userName' => time(),
+            'content'  => uniqid('content')
+        ]);*/
+
+        $this->_view->assign([
             'userName' => time(),
             'content'  => uniqid('content')
         ]);
 
-        \Yaf\Dispatcher::getInstance()->autoRender(false);
+        //\Yaf\Dispatcher::getInstance()->autoRender(false);
     }
 
     public function forAction()
