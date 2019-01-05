@@ -18,8 +18,21 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     {
         $router = $dispacher->getRouter();
         //$route = new \Yaf\Route\Simple('m','c','a');
-        $route = new \Yaf\Route\Supervar('r');
+        //$route = new \Yaf\Route\Supervar('r');
 
-        $router->addRoute('supervar',$route);
+        $route = new \Yaf\Route\Regex(
+                '#regex/(\d+)/(\d+)#',
+                [
+                    'module'      => 'rest',
+                    'controller'  => 'route',
+                    'action'      => 'index',
+                ],
+                [
+                    1 => 'param1',
+                    2 => 'param2',
+                ]
+        );
+
+        $router->addRoute('regex',$route);
     }
 }
