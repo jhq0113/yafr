@@ -20,7 +20,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         //$route = new \Yaf\Route\Simple('m','c','a');
         //$route = new \Yaf\Route\Supervar('r');
 
-        $route = new \Yaf\Route\Regex(
+        /*$route = new \Yaf\Route\Regex(
                 '#regex/(\d+)/(\d+)#',
                 [
                     'module'      => 'rest',
@@ -31,8 +31,17 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
                     1 => 'param1',
                     2 => 'param2',
                 ]
+        );*/
+
+        $route = new \Yaf\Route\Rewrite(
+            'rewrite/:param1/:param2',
+            [
+                'module'      => 'rest',
+                'controller'  => 'route',
+                'action'      => 'index',
+            ]
         );
 
-        $router->addRoute('regex',$route);
+        $router->addRoute('rewrite',$route);
     }
 }
