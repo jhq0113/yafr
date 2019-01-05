@@ -19,6 +19,8 @@ class RouteController extends \Yaf\Controller_Abstract
     public function indexAction()
     {
         $params = $this->_request->getParams();
+
+        //$this->_request->getParam()
         exit(json_encode($params,JSON_UNESCAPED_UNICODE));
     }
 }
