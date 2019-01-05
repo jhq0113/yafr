@@ -17,7 +17,7 @@ class RestController extends \extend\ControllerLayout
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
      */
-    protected $_layout = APPLICATION_PATH.'/application/views/main.phtml';
+    protected $_layout = APPLICATION_PATH.'/application/views/layouts/main.phtml';
 
     public function indexAction()
     {
