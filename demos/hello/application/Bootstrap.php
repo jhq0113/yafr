@@ -8,5 +8,10 @@
 
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
+    public function _initRoute(\Yaf\Dispatcher $dispacher)
+    {
+        $router = $dispacher->getRouter();
 
+        $router->addRoute('simple',new \Yaf\Route\Simple('m','c','a'));
+    }
 }
