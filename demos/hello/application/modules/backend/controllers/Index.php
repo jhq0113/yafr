@@ -10,7 +10,7 @@
  * Class Index
  * User Jiang Haiqiang
  */
-class Index extends \Yaf\Controller_Abstract
+class IndexController extends \Yaf\Controller_Abstract
 {
     public function indexAction()
     {
