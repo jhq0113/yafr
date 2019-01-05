@@ -10,7 +10,7 @@
  * Class RestController
  * User Jiang Haiqiang
  */
-class RestController extends \Yaf\Controller_Abstract
+class RestController extends \extend\ControllerLayout
 {
     public function indexAction()
     {
