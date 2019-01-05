@@ -33,7 +33,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
                 ]
         );*/
 
-        $route = new \Yaf\Route\Rewrite(
+        /*$route = new \Yaf\Route\Rewrite(
             'rewrite/:param1/:param2',
             [
                 'module'      => 'rest',
@@ -42,6 +42,8 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
             ]
         );
 
-        $router->addRoute('rewrite',$route);
+        $router->addRoute('rewrite',$route);*/
+
+        $router->addConfig(\Yaf\Application::app()->getConfig()->routes);
     }
 }
