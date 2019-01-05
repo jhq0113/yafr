@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Jiang Haiqiang
  * Date: 2019/1/5
- * Time: 10:40 PM
+ * Time: 10:52 PM
  */
 
 /**
@@ -18,7 +18,7 @@ class RouteController extends \Yaf\Controller_Abstract
      */
     public function indexAction()
     {
-        $params['params'] = $this->_request->getParams();
+        $params = $this->_request->getParams();
         exit(json_encode($params,JSON_UNESCAPED_UNICODE));
     }
 }
