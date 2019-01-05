@@ -30,8 +30,8 @@ class RestController extends \extend\ControllerLayout
      */
     public function routeAction()
     {
-        $query = json_encode($this->_request->getParams(),JSON_UNESCAPED_UNICODE);
-        $query = json_encode($this->_request->getQuery(),JSON_UNESCAPED_UNICODE);
+        $query['params'] = json_encode($this->_request->getParams(),JSON_UNESCAPED_UNICODE);
+        $query['query'] = json_encode($this->_request->getQuery(),JSON_UNESCAPED_UNICODE);
 
         exit($query);
     }

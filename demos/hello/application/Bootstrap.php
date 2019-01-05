@@ -12,6 +12,9 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     {
         $router = $dispacher->getRouter();
 
-        $router->addRoute('simple',new \Yaf\Route\Simple('m','c','a'));
+        //$route = new \Yaf\Route\Simple('m','c','a');
+        $route = new \Yaf\Route\Supervar('r');
+
+        $router->addRoute('simple',$route);
     }
 }
