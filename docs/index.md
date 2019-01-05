@@ -11,3 +11,4 @@
 #### [6.Controller](https://github.com/jhq0113/yafr/blob/master/docs/yaf/6.Controller.md)
 #### [7.View](https://github.com/jhq0113/yafr/blob/master/docs/yaf/7.View.md)
 #### [8.Module](https://github.com/jhq0113/yafr/blob/master/docs/yaf/8.Module.md)
+#### [9.异常处理](https://github.com/jhq0113/yafr/blob/master/docs/yaf/9.异常处理.md)
