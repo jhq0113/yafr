@@ -21,6 +21,6 @@ class RestController extends \extend\ControllerLayout
 
     public function indexAction()
     {
-
+        exit($this->_module);
     }
 }
