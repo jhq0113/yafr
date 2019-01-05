@@ -23,4 +23,15 @@ class RestController extends \extend\ControllerLayout
     {
         exit($this->_module);
     }
+
+    /**
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function routeAction()
+    {
+        $query = json_encode($this->_request->getParams(),JSON_UNESCAPED_UNICODE);
+
+        exit($query);
+    }
 }
