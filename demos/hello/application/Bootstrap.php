@@ -15,7 +15,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         //$route = new \Yaf\Route\Simple('m','c','a');
         //$route = new \Yaf\Route\Supervar('r');
         $route = new \Yaf\Route\Regex(
-            '#regex/(d+)/(d+)#',
+            '#regex/(\d+)/(\d+)#',
                 [
                     'module'      => 'rest',
                     'controller'  => 'rest',
