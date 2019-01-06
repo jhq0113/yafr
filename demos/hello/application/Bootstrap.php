@@ -9,6 +9,17 @@
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
     /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initComponents(\Yaf\Dispatcher $dispatcher)
+    {
+        $config = \Yaf\Application::app()->getConfig();
+        \Yaf\Registry::set('config',$config);
+    }
+
+    /**
      * @param \Yaf\Dispatcher $dispacher
      * @throws \Yaf\Exception\TypeError
      * @author Jiang Haiqiang
@@ -46,4 +57,6 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
 
         $router->addConfig(\Yaf\Application::app()->getConfig()->routes);
     }
+
+
 }
