@@ -83,7 +83,7 @@ class Di
     public static function get($name)
     {
         $object = Registry::get($name);
-        if(isset($object['class'])) {
+        if(is_array($object) && isset($object['class'])) {
             echo '对象创建了<br/>';
             $instance = self::createObject($object);
             Registry::set($name,$instance);
