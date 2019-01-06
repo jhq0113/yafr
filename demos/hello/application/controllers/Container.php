@@ -27,4 +27,13 @@ class ContainerController extends \Yaf\Controller_Abstract
         }
 
     }
+
+
+    public function diAction()
+    {
+        $user = new \service\User();
+        $info = $user->getInfo();
+
+        exit(json_encode($info));
+    }
 }
