@@ -27,21 +27,4 @@ class ContainerController extends \Yaf\Controller_Abstract
         }
 
     }
-
-    /**
-     * @author Jiang Haiqiang
-     * @email  jhq0113@163.com
-     */
-    public function diAction()
-    {
-        $service = new \service\BaseService();
-
-        echo '再次获取db';
-
-        \extend\Di::get('db');
-
-        echo 'dbsds';
-
-        $service->show();
-    }
 }

@@ -8,8 +8,6 @@
 
 namespace service;
 
-use extend\Di;
-
 /**
  * Class BaseService
  * @package service
@@ -28,17 +26,8 @@ class BaseService
      * BaseService constructor.
      * @param string $db
      */
-    public function __construct()
+    public function __construct($db)
     {
-        $this->db = Di::get('db');
-    }
-
-    /**
-     * @author Jiang Haiqiang
-     * @email  jhq0113@163.com
-     */
-    public function show()
-    {
-        exit(json_encode($this->db->getInfo(),JSON_UNESCAPED_UNICODE));
+        $this->db = $db;
     }
 }
