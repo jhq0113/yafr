@@ -14,3 +14,4 @@
 #### [9.异常处理](https://github.com/jhq0113/yafr/blob/master/docs/yaf/9.异常处理.md)
 #### [10.路由](https://github.com/jhq0113/yafr/blob/master/docs/yaf/10.路由.md)
 #### [11.容器](https://github.com/jhq0113/yafr/blob/master/docs/yaf/11.容器.md)
+#### [12.di](https://github.com/jhq0113/yafr/blob/master/docs/yaf/12.di.md)
