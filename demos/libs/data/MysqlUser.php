@@ -10,5 +10,20 @@ namespace data;
 
 class MysqlUser
 {
-
+    /**
+     * @return array
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function getInfo()
+    {
+        return [
+            'driver' => 'mysql',
+            'list'   => [
+                [
+                    'user_id' => 'o'
+                ]
+            ]
+        ];
+    }
 }
