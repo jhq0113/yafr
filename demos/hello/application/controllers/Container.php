@@ -20,7 +20,10 @@ class ContainerController extends \Yaf\Controller_Abstract
     {
         if(\Yaf\Registry::has('config')) {
             $config = \Yaf\Registry::get('config');
-            exit(json_encode($config->toArray(),JSON_UNESCAPED_UNICODE));
+            \Yaf\Registry::del('config');
+            if(!\Yaf\Registry::has('config')) {
+                exit(json_encode($config->toArray(),JSON_UNESCAPED_UNICODE));
+            }
         }
 
     }
