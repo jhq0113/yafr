@@ -16,7 +16,9 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     public function _initComponents(\Yaf\Dispatcher $dispatcher)
     {
         $config = \Yaf\Application::app()->getConfig();
-        \Yaf\Registry::set('config',$config);
+        //\Yaf\Registry::set('config',$config);
+
+        exit(json_encode($config->toArray()));
     }
 
     /**
