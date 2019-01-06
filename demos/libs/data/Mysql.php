@@ -16,4 +16,17 @@ namespace data;
 class Mysql
 {
     public $name ='mysql';
+
+
+    public function getInfo()
+    {
+        return [
+            'driver' => 'mysql',
+            'data'   => [
+                [
+                    'user_id' => '30'
+                ]
+            ]
+        ];
+    }
 }

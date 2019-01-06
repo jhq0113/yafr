@@ -39,6 +39,6 @@ class BaseService
      */
     public function show()
     {
-        exit($this->db->name);
+        exit(json_encode($this->db->getInfo(),JSON_UNESCAPED_UNICODE));
     }
 }

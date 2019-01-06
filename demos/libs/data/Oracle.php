@@ -12,4 +12,16 @@ namespace data;
 class Oracle
 {
     public $name='oracle';
+
+    public function getInfo()
+    {
+        return [
+            'driver' => 'oracle',
+            'data'   => [
+                [
+                    'user_id' => '36'
+                ]
+            ]
+        ];
+    }
 }
