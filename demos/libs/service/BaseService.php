@@ -31,6 +31,8 @@ class BaseService
     public function __construct()
     {
         $this->db = Di::get('db');
+        $this->db = Di::get('db');
+        $this->db = Di::get('db');
     }
 
     /**

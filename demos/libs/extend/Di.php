@@ -84,10 +84,13 @@ class Di
     {
         $object = Registry::get($name);
         if(isset($object['class'])) {
+            echo '对象创建了<br/>';
             $instance = self::createObject($object);
             Registry::set($name,$instance);
             return $instance;
         }
+
+        echo '从容器中获取到的对象<br/>';
 
         return $object;
     }
