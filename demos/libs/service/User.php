@@ -24,6 +24,9 @@ class User
     {
         //$this->_db = new \data\OracleUser();
         $this->_db = Di::get('dbUser');
+        $this->_db = Di::get('dbUser');
+        $this->_db = Di::get('dbUser');
+        $this->_db = Di::get('dbUser');
     }
 
     /**
