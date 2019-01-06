@@ -39,7 +39,6 @@ class BaseService
      */
     public function show()
     {
-        Di::get('db');
         exit(json_encode($this->db->getInfo(),JSON_UNESCAPED_UNICODE));
     }
 }

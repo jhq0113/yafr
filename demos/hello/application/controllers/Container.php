@@ -35,6 +35,13 @@ class ContainerController extends \Yaf\Controller_Abstract
     public function diAction()
     {
         $service = new \service\BaseService();
+
+        echo '再次获取db';
+
+        \extend\Di::get('db');
+
+        echo 'dbsds';
+
         $service->show();
     }
 }
