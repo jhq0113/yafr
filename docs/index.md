@@ -17,3 +17,4 @@
 #### [12.di与ioc](https://github.com/jhq0113/yafr/blob/master/docs/yaf/12.di.md)
 #### [13.di设计与实现](https://github.com/jhq0113/yafr/blob/master/docs/yaf/13.di设计与实现.md)
 #### [14.psr-3](https://github.com/jhq0113/yafr/blob/master/docs/yaf/14.psr-3.md)
+#### [15.日志](https://github.com/jhq0113/yafr/blob/master/docs/yaf/15.日志.md)
