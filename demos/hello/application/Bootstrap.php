@@ -8,6 +8,12 @@
 
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
+    public function _initConfig(\Yaf\Dispatcher $dispatcher)
+    {
+        $config = $dispatcher->getApplication()->getConfig();
+        \Yaf\Registry::set('config',$config);
+    }
+
     /**
      * @param \Yaf\Dispatcher $dispacher
      * @throws \Yaf\Exception\TypeError

@@ -24,6 +24,9 @@ class IndexController extends Yaf\Controller_Abstract
     // default action name
     public function indexAction()
     {
+        $config = \Yaf\Registry::get('config');
+        var_dump($config->toArray());
+        die;
         //$service = new \service\BaseService('dbName');
 
         //$adapter = new \adapter\BaseAdapter('testAdapter');
