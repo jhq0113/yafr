@@ -31,8 +31,6 @@ class BaseService
     public function __construct()
     {
         $this->db = Di::get('db');
-        $this->db = Di::get('db');
-        $this->db = Di::get('db');
     }
 
     /**
@@ -41,6 +39,7 @@ class BaseService
      */
     public function show()
     {
+        Di::get('db');
         exit(json_encode($this->db->getInfo(),JSON_UNESCAPED_UNICODE));
     }
 }
