@@ -5,6 +5,7 @@
  * Date: 2019/1/6
  * Time: 2:45 PM
  */
+namespace data;
 
 class OracleUser
 {

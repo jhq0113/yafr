@@ -6,6 +6,8 @@
  * Time: 2:44 PM
  */
 
+namespace data;
+
 class MysqlUser
 {
 

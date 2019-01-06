@@ -20,7 +20,7 @@ class User
 
     public function __construct()
     {
-        $this->_db = new \OracleUser();
+        $this->_db = new \data\OracleUser();
     }
 
     /**
