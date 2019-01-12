@@ -31,6 +31,14 @@ class IndexController extends Yaf\Controller_Abstract
         //$this->getView()->content = $adapter->name;
 
         $config = \Yaf\Application::app()->getConfig()->toArray();
+
+        $log = new \extend\log\File();
+        $log->fileName = APPLICATION_PATH.'/logs/'.date('Y-m').'/'.date('d').'/yaf.log';
+
+        $log->info('wo shi {userName}!',[
+            'userName' => uniqid()
+        ]);
+
         echo json_encode($config);
         die;
     }
