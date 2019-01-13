@@ -47,7 +47,10 @@ class File extends ILogger
         $dir = dirname($this->fileName);
 
         if(!is_dir($dir)) {
-            mkdir($dir,$this->mode,true);
+            $dirResult = mkdir($dir,$this->mode,true);
+            if(!$dirResult) {
+                exit('mkdir failed');
+            }
         }
 
         $message = StringHelper::interpolate($message,$context);
@@ -55,6 +58,7 @@ class File extends ILogger
         $file = @fopen($this->fileName,'a');
         if($file) {
             @fwrite($file,$message);
+            @chmod($this->fileName,$this->mode);
             @fclose($file);
         }
     }
