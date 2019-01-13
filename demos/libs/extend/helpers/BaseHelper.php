@@ -8,7 +8,7 @@
 
 namespace extend\helpers;
 
-/**
+/**扩展帮助类都是静态类
  * Class BaseHelper
  * @package extend\helpers
  * User Jiang Haiqiang
