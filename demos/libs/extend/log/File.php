@@ -58,7 +58,8 @@ class File extends ILog
             'message'  => $message,
             'level'    => $level,
             'datetime' => date('Y-m-d H:i:s'),
-            'clientIp' => HttpHelper::getClientIp()
+            'clientIp' => HttpHelper::getClientIp(),
+            'traceId'  => HttpHelper::getTraceId()
         ];
 
         $file = @fopen($this->fileName,'a');

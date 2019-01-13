@@ -17,6 +17,13 @@ namespace extend\helpers;
 class HttpHelper extends BaseHelper
 {
     /**
+     * @var string
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    private static $_traceId;
+
+    /**
      * @param bool $isLong
      * @return int
      * @author Jiang Haiqiang
@@ -25,5 +32,18 @@ class HttpHelper extends BaseHelper
     public static function getClientIp($isLong=false)
     {
         return $isLong ? ip2long($_SERVER['REMOTE_ADDR']) : $_SERVER['REMOTE_ADDR'];
+    }
+
+    /**
+     * @return string
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public static function getTraceId()
+    {
+        if(!isset(self::$_traceId)) {
+            self::$_traceId = uniqid('yafr_');
+        }
+        return self::$_traceId;
     }
 }

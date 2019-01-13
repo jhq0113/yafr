@@ -13,17 +13,21 @@ class IndexController extends Yaf\Controller_Abstract
      */
     public function init()
     {
+        \extend\Di::get('log')->debug('init start');
+
         echo $this->getRequest()->controller.'<br/>';
         echo $this->getRequest()->action.'<br/>';
         if($this->getRequest()->action != 'index') {
             exit('禁止访问');
         }
 
+        \extend\Di::get('log')->debug('init end!');
     }
 
     // default action name
     public function indexAction()
     {
+        \extend\Di::get('log')->info('index action start run');
         //$service = new \service\BaseService('dbName');
 
         //$adapter = new \adapter\BaseAdapter('testAdapter');
@@ -41,6 +45,8 @@ class IndexController extends Yaf\Controller_Abstract
         $config = \Yaf\Application::app()->getConfig()->toArray();
 
         echo json_encode($config);
+
+        \extend\Di::get('log')->info('index action run end');
         die;
     }
 }
