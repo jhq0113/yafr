@@ -17,7 +17,9 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     {
         $config = \Yaf\Application::app()->getConfig();
         //\Yaf\Registry::set('config',$config);
+        var_dump($config->toArray()['log']);die;
         \extend\Di::set('dbUser',$config->toArray()['db']);
+
     }
 
     /**
