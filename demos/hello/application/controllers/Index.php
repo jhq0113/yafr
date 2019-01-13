@@ -33,7 +33,7 @@ class IndexController extends Yaf\Controller_Abstract
         $config = \Yaf\Application::app()->getConfig()->toArray();
 
         $log = new \extend\log\File();
-        $log->fileName = APPLICATION_PATH.'/logs/'.date('Y-m').'/'.date('d').'/yaf.log';
+        $log->fileName = '/tmp/logs/'.date('Y-m').'/'.date('d').'/yaf.log';
 
         $log->info('wo shi {userName}!',[
             'userName' => uniqid()
