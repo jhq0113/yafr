@@ -45,6 +45,10 @@ class File extends ILog
      */
     public function log($level, $message, array $context = array())
     {
+        if(!in_array($level,$this->acceptLevels)) {
+            return;
+        }
+
         // TODO: Implement log() method.
         $dir = dirname($this->fileName);
 

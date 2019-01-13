@@ -25,6 +25,21 @@ abstract class ILog
     public $format = [];
 
     /**
+     * @var array
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public $acceptLevels = [
+        LogLevel::INFO,
+        LogLevel::NOTICE,
+        LogLevel::WARNING,
+        LogLevel::ERROR,
+        LogLevel::CRITICAL,
+        LogLevel::ALERT,
+        LogLevel::EMERGENCY
+    ];
+
+    /**
      * 系统不可用
      *
      * @param string $message
