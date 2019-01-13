@@ -30,8 +30,10 @@ class IndexController extends Yaf\Controller_Abstract
 
         //$this->getView()->content = $adapter->name;
 
-        $log = new \extend\log\File();
-        $log->fileName = '/tmp/logs/'.date('Y-m').'/'.date('d').'/yaf.log';
+        /**
+         * @var \extend\log\File $log
+         */
+        $log = \extend\Di::get('log');
         $log->info('wo shi info {level} ',[
             'level' => 'info'
         ]);

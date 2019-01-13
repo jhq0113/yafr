@@ -17,9 +17,21 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     {
         $config = \Yaf\Application::app()->getConfig();
         //\Yaf\Registry::set('config',$config);
-        var_dump($config->toArray()['log']);die;
         \extend\Di::set('dbUser',$config->toArray()['db']);
 
+    }
+
+    /**初始化日志组件
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initLog(\Yaf\Dispatcher $dispatcher)
+    {
+        $logConfig = \Yaf\Application::app()->getConfig()->toArray()['log'];
+        $logConfig['fileName'] = $logConfig['logPath'].'/'.date('Y-m').'/'.date('d').'/yaf.log';
+        unset($logConfig['logPath']);
+        \extend\Di::set('log',$logConfig);
     }
 
     /**
