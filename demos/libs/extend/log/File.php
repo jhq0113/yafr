@@ -53,7 +53,7 @@ class File extends ILog
 
         $file = @fopen($this->fileName,'a');
         if($file) {
-            @fwrite($file,$message);
+            @fwrite($file,$message.PHP_EOL);
             @chmod($this->fileName,$this->mode);
             @fclose($file);
         }
