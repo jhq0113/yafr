@@ -31,7 +31,6 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         $logConfig = \Yaf\Application::app()->getConfig()->toArray()['log'];
         $logConfig['fileName'] = $logConfig['logPath'].'/'.date('Y-m').'/'.date('d').'/yaf.log';
         unset($logConfig['logPath']);
-        var_dump($logConfig);die;
         \extend\Di::set('log',$logConfig);
     }
 
