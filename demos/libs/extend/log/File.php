@@ -8,6 +8,9 @@
 
 namespace extend\log;
 
+use extend\Di;
+use extend\formatter\Json;
+use extend\helpers\HttpHelper;
 use extend\helpers\StringHelper;
 use extend\ILog;
 
@@ -51,9 +54,19 @@ class File extends ILog
 
         $message = StringHelper::interpolate($message,$context);
 
+        $data = [
+            'message'  => $message,
+            'level'    => $level,
+            'datetime' => date('Y-m-d H:i:s'),
+            'clientIp' => HttpHelper::getClientIp()
+        ];
+
         $file = @fopen($this->fileName,'a');
+
         if($file) {
-            @fwrite($file,$message.PHP_EOL);
+            $this->format = Di::insure($this->format,Json::class);
+
+            @fwrite($file,$this->format->convert($data).PHP_EOL);
             @chmod($this->fileName,$this->mode);
             @fclose($file);
         }

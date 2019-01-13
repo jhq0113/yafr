@@ -18,6 +18,13 @@ use extend\log\LogLevel;
 abstract class ILog
 {
     /**
+     * @var IFormatter
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public $format = [];
+
+    /**
      * 系统不可用
      *
      * @param string $message
