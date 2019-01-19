@@ -37,6 +37,22 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     }
 
     /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initObserver(\Yaf\Dispatcher $dispatcher)
+    {
+        $nofifier = new \observer\Phone();
+
+        $xiaoming = new \observer\Person();
+
+        $nofifier->attach($xiaoming);
+
+        \extend\Di::set('notifier',$nofifier);
+    }
+
+    /**
      * @param \Yaf\Dispatcher $dispacher
      * @throws \Yaf\Exception\TypeError
      * @author Jiang Haiqiang
