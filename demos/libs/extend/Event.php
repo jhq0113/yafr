@@ -34,7 +34,7 @@ class Event
     public $handled = false;
 
     /**
-     * @var mixed $data
+     * @var array $data
      */
-    public $data;
+    public $data = [];
 }
