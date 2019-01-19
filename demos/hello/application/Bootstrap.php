@@ -9,6 +9,11 @@
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
     /**
+     * 应用事件trait
+     */
+    use \extend\event\Event;
+
+    /**
      * @param \Yaf\Dispatcher $dispatcher
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
@@ -58,6 +63,11 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         \extend\Di::set('notifier',$nofifier);
     }
 
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
     public function _initEvent(\Yaf\Dispatcher $dispatcher)
     {
         $app = new \extend\App();
@@ -76,6 +86,22 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
                 'data'  => $entity->data - 1
             ]);
         });
+    }
+
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initSelf(\Yaf\Dispatcher $dispatcher)
+    {
+        $this->on('init',function(\extend\event\Entity $entity){
+            \extend\Di::get('log')->info('bootstrap事件:[{event}]',[
+                'event' => $entity->name,
+            ]);
+        });
+
+        $this->trigger('init');
     }
 
     /**
