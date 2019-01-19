@@ -5,7 +5,7 @@
  * Date: 2019/1/19
  * Time: 6:30 PM
  */
-namespace traits;
+namespace extend\traits;
 
 /**
  * Trait Event

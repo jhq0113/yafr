@@ -13,7 +13,7 @@ namespace extend;
  * @package extend
  * User Jiang Haiqiang
  */
-class Apps
+class App
 {
-    use \traits\Event;
+    use \extend\traits\Event;
 }
