@@ -18,9 +18,18 @@ use extend\Di;
  */
 class LogObserver implements IObserver
 {
+    /**
+     * @var
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public $name;
+
     public function update(Subject $subject)
     {
         // TODO: Implement update() method.
-        Di::get('log')->info($subject->state);
+        Di::get('log')->info($subject->state.',{name}',[
+            'name' => $this->name
+        ]);
     }
 }
