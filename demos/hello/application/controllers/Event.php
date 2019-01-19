@@ -31,6 +31,8 @@ class EventController extends \Yaf\Controller_Abstract
         $app = \extend\Di::get('app');
 
         $app->on('action:run',[$this,'addition']);
+        $app->off('action:run');
+
 
         $entity = new \extend\event\Entity();
         $entity->data = time();
