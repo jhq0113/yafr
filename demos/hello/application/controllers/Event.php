@@ -19,6 +19,10 @@ class EventController extends \Yaf\Controller_Abstract
          * @var \extend\App $app
          */
         $app = \extend\Di::get('app');
-        $app->trigger('action:run');
+
+        $entity = new \extend\event\Entity();
+        $entity->data = time();
+
+        $app->trigger('action:run',$entity);
     }
 }
