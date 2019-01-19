@@ -19,6 +19,13 @@ use extend\log\File;
 class Person implements IObserver
 {
     /**
+     * @var
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public $name;
+
+    /**
      * @param INotifier $notifier
      * @return mixed|void
      * @author Jiang Haiqiang
@@ -31,6 +38,8 @@ class Person implements IObserver
          * @var File $log
          */
         $log = Di::get('log');
-        $log->info('接收到通知者的状态是：'.$notifier->state);
+        $log->info('{name}接收到通知者的状态是：'.$notifier->state,[
+            'name' => $this->name
+        ]);
     }
 }

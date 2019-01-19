@@ -46,8 +46,13 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         $nofifier = new \observer\Phone();
 
         $xiaoming = new \observer\Person();
+        $xiaoming->name = 'Xiao Ming';
+
+        $xiaohong = new \observer\Person();
+        $xiaohong->name = 'Xiao Hong';
 
         $nofifier->attach($xiaoming);
+        $nofifier->attach($xiaohong);
 
         \extend\Di::set('notifier',$nofifier);
     }
