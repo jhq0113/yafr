@@ -27,6 +27,12 @@ class ObserverController extends \Yaf\Controller_Abstract
      */
     public function indexAction()
     {
-        \extend\Di::get('notifier')->notify();
+        /**
+         * @var \observer\Phone $notifier
+         */
+        $notifier = \extend\Di::get('notifier');
+        $notifier->state = '就绪';
+
+        $notifier->notify();
     }
 }
