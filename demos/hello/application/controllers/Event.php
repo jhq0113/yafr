@@ -34,7 +34,10 @@ class EventController extends \Yaf\Controller_Abstract
 
         //移除所有事件的handler
         //$app->off('action:run');
-        $app->off('action:run',[$this,'addition']);
+        if($app->hasHandlers('action:run')) {
+            $app->off('action:run',[$this,'addition']);
+        }
+
 
 
         $entity = new \extend\event\Entity();
