@@ -61,17 +61,14 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     public function _initEvent(\Yaf\Dispatcher $dispatcher)
     {
         $app = new \extend\App();
+        \extend\Di::set('app',$app);
 
-        $app->on('initEvent',function(\extend\event\Entity $entity){
+        $app->on('action:run',function(\extend\event\Entity $entity){
             \extend\Di::get('log')->info('事件:[{event}],数据：[{data}]',[
                 'event' => $entity->name,
                 'data'  => $entity->data
             ]);
         });
-
-        \extend\Di::set('app',$app);
-
-        $app->trigger('initEvent');
     }
 
     /**
