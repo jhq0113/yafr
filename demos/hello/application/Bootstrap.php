@@ -59,6 +59,27 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     }
 
     /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initEvent(\Yaf\Dispatcher $dispatcher)
+    {
+        $app = new \extend\App();
+
+        $app->on('bootstrap',function(\extend\Event $event){
+            \extend\Di::get('log')->info('事件【{event}】,数据：[{data}]',[
+                'event'     =>  $event->name,
+                'data'      =>  json_encode($event->data,JSON_UNESCAPED_UNICODE)
+            ]);
+        });
+
+        \extend\Di::set('event',$app);
+
+        $app->trigger('bootstrap');
+    }
+
+    /**
      * @param \Yaf\Dispatcher $dispacher
      * @throws \Yaf\Exception\TypeError
      * @author Jiang Haiqiang
