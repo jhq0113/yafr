@@ -41,6 +41,8 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         $subject = new \extend\event\Subject();
 
         $subject->attach(new \extend\event\LogObserver());
+        $subject->attach(new \extend\event\LogObserver());
+        $subject->attach(new \extend\event\LogObserver());
 
         \extend\Di::set('event',$subject);
     }
