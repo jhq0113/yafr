@@ -69,6 +69,13 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
                 'data'  => $entity->data
             ]);
         });
+
+        $app->on('action:run',function(\extend\event\Entity $entity){
+            \extend\Di::get('log')->info('事件:[{event}],数据：[{data}]',[
+                'event' => $entity->name,
+                'data'  => $entity->data - 1
+            ]);
+        });
     }
 
     /**
