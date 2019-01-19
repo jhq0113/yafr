@@ -53,6 +53,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
 
         $nofifier->attach($xiaoming);
         $nofifier->attach($xiaohong);
+        $nofifier->dettach($xiaohong);
 
         \extend\Di::set('notifier',$nofifier);
     }
