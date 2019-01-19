@@ -10,6 +10,11 @@ class EventController extends \Yaf\Controller_Abstract
 {
     public function indexAction()
     {
-        \extend\Di::get('event')->notify();
+        /**
+         * @var \extend\event\Subject $event
+         */
+        $event = \extend\Di::get('event');
+        $event->state ='trigger';
+        $event->notify();
     }
 }
