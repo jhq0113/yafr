@@ -36,24 +36,6 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         \extend\Di::get('log')->debug('log set done!');
     }
 
-    public function _initEvent(\Yaf\Dispatcher $dispatcher)
-    {
-        $subject = new \extend\event\Subject();
-
-        $observer1 = new \extend\event\LogObserver();
-        $observer1->name = 'observer1';
-        $observer2 = new \extend\event\LogObserver();
-        $observer2->name = 'observer2';
-        $observer3 = new \extend\event\LogObserver();
-        $observer3->name = 'observer3';
-        $subject->attach($observer1);
-        $subject->attach($observer2);
-        $subject->attach($observer3);
-        $subject->dettach($observer2);
-
-        \extend\Di::set('event',$subject);
-    }
-
     /**
      * @param \Yaf\Dispatcher $dispacher
      * @throws \Yaf\Exception\TypeError
