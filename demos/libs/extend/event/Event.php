@@ -1,48 +1,11 @@
-## [目录](https://github.com/jhq0113/yafr/blob/master/docs/index.md)
-
-## [17.观察者模式](https://github.com/jhq0113/yafr/blob/master/docs/yaf/17.观察者模式.md)
-
-# 事件
-
-* 事件对象
-
-```php
-<?php 
-namespace extend\event;
-
-/**
- * Class Entity
- * User Jiang Haiqiang
- */
-class Entity
-{
-    /**事件名称
-     * @var string $name
-     */
-    public $name;
-
-    /**事件触发者
-     * @var object $sender
-     */
-    public $sender;
-
-    /**事件是否已经被处理，如果handled为true,其他handler不会再接收到通知
-     * @var bool $handled
-     */
-    public $handled = false;
-
-    /**数据
-     * @var mixed $data
-     */
-    public $data;
-}
-?>
-```
-
-* 事件traits
-```php
-
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Jiang Haiqiang
+ * Date: 2019/1/19
+ * Time: 7:36 PM
+ */
+
 namespace extend\event;
 
 /**
@@ -151,7 +114,7 @@ trait Event
         $event->handled = false;
         $event->name = $name;
 
-        
+
         foreach ($this->_events[ $name ] as $handler) {
             call_user_func($handler, $event);
 
@@ -160,7 +123,6 @@ trait Event
                 return;
             }
         }
-        
+
     }
 }
-```

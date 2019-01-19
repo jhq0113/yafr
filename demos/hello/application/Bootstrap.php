@@ -58,6 +58,22 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         \extend\Di::set('notifier',$nofifier);
     }
 
+    public function _initEvent(\Yaf\Dispatcher $dispatcher)
+    {
+        $app = new \extend\App();
+
+        $app->on('initEvent',function(\extend\event\Entity $entity){
+            \extend\Di::get('log')->info('事件:[{event}],数据：[{data}]',[
+                'event' => $entity->name,
+                'data'  => $entity->data
+            ]);
+        });
+
+        \extend\Di::set('app',$app);
+
+        $app->trigger('initEvent');
+    }
+
     /**
      * @param \Yaf\Dispatcher $dispacher
      * @throws \Yaf\Exception\TypeError
