@@ -13,12 +13,24 @@ class EventController extends \Yaf\Controller_Abstract
         \Yaf\Dispatcher::getInstance()->disableView();
     }
 
+    /**
+     * @param \extend\event\Entity $entity
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function addition(\extend\event\Entity $entity)
+    {
+        echo $entity->data;
+    }
+
     public function indexAction()
     {
         /**
          * @var \extend\App $app
          */
         $app = \extend\Di::get('app');
+
+        $app->on('action:run',[$this,'addition']);
 
         $entity = new \extend\event\Entity();
         $entity->data = time();
