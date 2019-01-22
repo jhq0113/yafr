@@ -25,4 +25,9 @@ class LoginController extends \extend\ControllerLayout
     {
 
     }
+
+    public function formAction()
+    {
+
+    }
 }
