@@ -21,3 +21,4 @@
 #### [16.traceId](https://github.com/jhq0113/yafr/blob/master/docs/yaf/16.traceId.md)
 #### [17.观察者模式](https://github.com/jhq0113/yafr/blob/master/docs/yaf/17.观察者模式.md)
 #### [18.事件](https://github.com/jhq0113/yafr/blob/master/docs/yaf/18.事件.md)
+#### [19.环境管理](https://github.com/jhq0113/yafr/blob/master/docs/yaf/19.环境管理.md)
