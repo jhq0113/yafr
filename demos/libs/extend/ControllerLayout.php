@@ -40,7 +40,7 @@ class ControllerLayout extends Controller_Abstract
      * Date: 2019/1/3
      * Time: 16:39
      */
-    protected function render($tpl, array $parameters = [])
+    protected function render($tpl, ?array $parameters = [])
     {
         Dispatcher::getInstance()->autoRender(false);
 
@@ -67,7 +67,7 @@ class ControllerLayout extends Controller_Abstract
      * Date: 2019/1/3
      * Time: 16:39
      */
-    protected function display($tpl, array $parameters = [])
+    protected function display($tpl, ?array $parameters = [])
     {
         $content = $this->render($tpl,$parameters);
         $this->_response->setBody($content);
