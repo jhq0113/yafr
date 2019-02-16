@@ -32,3 +32,10 @@
 ### composer
 #### [1.composer概述](https://github.com/jhq0113/yafr/blob/master/docs/composer/1.composer概述.md)
 #### [2.composer私有企业库](https://github.com/jhq0113/yafr/blob/master/docs/composer/2.composer私有企业库.md)
+
+### cron
+#### [1.cron概述及应用](https://github.com/jhq0113/yafr/blob/master/docs/cron/1.cron概述及应用.md)
+#### [2.yaf搭建console应用](https://github.com/jhq0113/yafr/blob/master/docs/cron/2.yaf搭建console应用.md)
+#### [3.console应用实现cron任务配置解析](https://github.com/jhq0113/yafr/blob/master/docs/cron/3.console应用实现cron任务配置解析)
+#### [4.cron任务配置多存储介质](https://github.com/jhq0113/yafr/blob/master/docs/cron/4.cron任务配置多存储介质.md)
+#### [5.实现秒级任务](https://github.com/jhq0113/yafr/blob/master/docs/cron/5.实现秒级任务.md)
