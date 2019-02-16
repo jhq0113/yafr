@@ -26,3 +26,5 @@
 
 ### orm
 #### [1.orm概述](https://github.com/jhq0113/yafr/blob/master/docs/orm/1.orm概述.md)
+#### [2.pdo-mysql](https://github.com/jhq0113/yafr/blob/master/docs/yaf/2.pdo-mysql.md)
+#### [3.activeRecord](https://github.com/jhq0113/yafr/blob/master/docs/yaf/3.activeRecord.md)
