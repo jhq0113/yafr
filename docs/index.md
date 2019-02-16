@@ -30,5 +30,5 @@
 #### [3.activeRecord](https://github.com/jhq0113/yafr/blob/master/docs/orm/3.activeRecord.md)
 
 ### composer
-#### [1.composer概述](https://github.com/jhq0113/yafr/blob/master/docs/1.composer概述.md)
-#### [2.composer私有企业库](https://github.com/jhq0113/yafr/blob/master/docs/2.composer私有企业库.md)
+#### [1.composer概述](https://github.com/jhq0113/yafr/blob/master/docs/composer/1.composer概述.md)
+#### [2.composer私有企业库](https://github.com/jhq0113/yafr/blob/master/docs/composer/2.composer私有企业库.md)
