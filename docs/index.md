@@ -28,3 +28,7 @@
 #### [1.orm概述](https://github.com/jhq0113/yafr/blob/master/docs/orm/1.orm概述.md)
 #### [2.pdo-mysql](https://github.com/jhq0113/yafr/blob/master/docs/orm/2.pdo-mysql.md)
 #### [3.activeRecord](https://github.com/jhq0113/yafr/blob/master/docs/orm/3.activeRecord.md)
+
+### composer
+#### [1.composer概述](https://github.com/jhq0113/yafr/blob/master/docs/1.composer概述.md)
+#### [2.composer私有企业库](https://github.com/jhq0113/yafr/blob/master/docs/2.composer私有企业库.md)

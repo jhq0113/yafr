@@ -1,0 +1,195 @@
+[
+    {
+        "name": "catfan/medoo",
+        "version": "v1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/catfan/Medoo.git",
+            "reference": "53a02b300d673f716cb06bf0e24fd774ec53939f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/catfan/Medoo/zipball/53a02b300d673f716cb06bf0e24fd774ec53939f",
+            "reference": "53a02b300d673f716cb06bf0e24fd774ec53939f",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "php": ">=5.4"
+        },
+        "suggest": {
+            "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+            "ext-pdo_mysql": "For MySQL or MariaDB database",
+            "ext-pdo_oci": "For Oracle database",
+            "ext-pdo_oci8": "For Oracle version 8 database",
+            "ext-pdo_pqsql": "For PostgreSQL database",
+            "ext-pdo_sqlite": "For SQLite database",
+            "ext-pdo_sqlsrv": "For MSSQL database"
+        },
+        "time": "2018-12-08T20:24:23+00:00",
+        "type": "framework",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Medoo\\": "/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Angel Lai",
+                "email": "angel@catfan.me"
+            }
+        ],
+        "description": "The lightest PHP database framework to accelerate development",
+        "homepage": "https://medoo.in",
+        "keywords": [
+            "database",
+            "lightweight",
+            "mariadb",
+            "mssql",
+            "mysql",
+            "oracle",
+            "php framework",
+            "postgresql",
+            "sql",
+            "sqlite"
+        ]
+    },
+    {
+        "name": "com/com",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "git@gitlab.com:JiangHaiqiang/com.git",
+            "reference": "8d6898ed8edcc03e929a35c22ca720936b22b3b5"
+        },
+        "dist": {
+            "type": "tar",
+            "url": "http://www.jhq0113.com/dist/com/com/com-com-8d6898ed8edcc03e929a35c22ca720936b22b3b5-zip-735544.tar",
+            "reference": "8d6898ed8edcc03e929a35c22ca720936b22b3b5",
+            "shasum": "c2841642d21ddc6a998179408a7901f6fd65e646"
+        },
+        "time": "2019-02-03T11:50:40+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "com\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jiang Haiqiang",
+                "email": "jhq0113@163.com",
+                "homepage": "https://github.com/jhq0113",
+                "role": "Developer"
+            }
+        ],
+        "description": "com",
+        "homepage": "https://gitlab.com/JiangHaiqiang/com",
+        "keywords": [
+            "com",
+            "php"
+        ]
+    },
+    {
+        "name": "jhq0113/phpyaf",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jhq0113/phpyaf.git",
+            "reference": "8de1ba860d4ecdda39a46dc16bac4d51e435293f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jhq0113/phpyaf/zipball/8de1ba860d4ecdda39a46dc16bac4d51e435293f",
+            "reference": "8de1ba860d4ecdda39a46dc16bac4d51e435293f",
+            "shasum": ""
+        },
+        "time": "2019-02-03T10:02:06+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "phpyaf\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jiang Haiqiang",
+                "email": "jhq0113@163.com",
+                "homepage": "https://github.com/jhq0113",
+                "role": "Developer"
+            }
+        ],
+        "description": "phpyaf composer study",
+        "homepage": "https://github.com/jhq0113/phpyaf",
+        "keywords": [
+            "composer",
+            "php"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-11-20T15:27:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    }
+]

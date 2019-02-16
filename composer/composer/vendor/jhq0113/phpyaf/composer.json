@@ -1,0 +1,25 @@
+{
+  "name":"jhq0113/phpyaf",
+  "description": "phpyaf composer study",
+  "keywords": ["php", "composer"],
+  "license": "MIT",
+  "homepage":"https://github.com/jhq0113/phpyaf",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Jiang Haiqiang",
+      "email": "jhq0113@163.com",
+      "homepage": "https://github.com/jhq0113",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "phpyaf\\": "src/"
+    }
+  }
+}

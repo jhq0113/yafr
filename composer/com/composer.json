@@ -1,0 +1,25 @@
+{
+  "name":"com/com",
+  "description": "com",
+  "keywords": ["php", "com"],
+  "license": "MIT",
+  "homepage":"https://gitlab.com/JiangHaiqiang/com",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Jiang Haiqiang",
+      "email": "jhq0113@163.com",
+      "homepage": "https://github.com/jhq0113",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "com\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "require": {
+    "jhq0113/phpyaf":"1.0.2",
+    "psr/log":"1.1.0",
+    "catfan/medoo":"v1.6.1",
+    "com/com":"1.0.2"
+  },
+  "repositories":[
+    {
+      "type": "composer",
+      "url": "http://www.jhq0113.com"
+    }
+  ],
+  "config":{
+    "secure-http":false
+  }
+}
