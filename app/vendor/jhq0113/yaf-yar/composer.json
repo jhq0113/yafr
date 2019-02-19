@@ -1,0 +1,26 @@
+{
+  "name":"jhq0113/yaf-yar",
+  "description": "yaf-yar",
+  "keywords": ["php", "yaf","yar","mvc","di","ioc"],
+  "license": "MIT",
+  "homepage":"https://github.com/jhq0113/yaf-yar",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Jiang Haiqiang",
+      "email": "jhq0113@163.com",
+      "homepage": "https://github.com/jhq0113",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php":"^7.1"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "yafr\\": "src/"
+    }
+  }
+}

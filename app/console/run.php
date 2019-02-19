@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 /**
  * Created by PhpStorm.
@@ -6,4 +7,8 @@
  * Time: 8:20 PM
  */
 
-echo date('Y-m-d H:i:s').PHP_EOL;
+define("APPLICATION_PATH",  __DIR__);
+
+$app  = new Yaf\Application(dirname(APPLICATION_PATH) ."/common/conf/application.ini");
+
+$app->bootstrap();

@@ -1,0 +1,51 @@
+[
+    {
+        "name": "jhq0113/yaf-yar",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jhq0113/yaf-yar.git",
+            "reference": "b6c3d938778330704d350bba8d2edf3793c68e9c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jhq0113/yaf-yar/zipball/b6c3d938778330704d350bba8d2edf3793c68e9c",
+            "reference": "b6c3d938778330704d350bba8d2edf3793c68e9c",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "time": "2019-02-16T08:57:41+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yafr\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jiang Haiqiang",
+                "email": "jhq0113@163.com",
+                "homepage": "https://github.com/jhq0113",
+                "role": "Developer"
+            }
+        ],
+        "description": "yaf-yar",
+        "homepage": "https://github.com/jhq0113/yaf-yar",
+        "keywords": [
+            "di",
+            "ioc",
+            "mvc",
+            "php",
+            "yaf",
+            "yar"
+        ]
+    }
+]
