@@ -18,7 +18,7 @@ class IndexController extends \Yaf\Controller_Abstract
      */
     public function indexAction()
     {
-        exit('index/index');
+        echo 'index/index';
     }
 
     /**
@@ -28,6 +28,6 @@ class IndexController extends \Yaf\Controller_Abstract
     public function testAction()
     {
         var_dump($this->_request->getParams());
-        exit('index/test');
+        echo 'index/test';
     }
 }
