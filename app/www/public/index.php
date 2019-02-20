@@ -1,13 +1,12 @@
-#!/usr/bin/env php
 <?php
 /**
  * Created by PhpStorm.
  * User: Jiang Haiqiang
- * Date: 2019/2/16
- * Time: 8:20 PM
+ * Date: 2018/12/30
+ * Time: 5:32 PM
  */
 
-define("APPLICATION_PATH",  __DIR__);
+define("APPLICATION_PATH",  dirname(__DIR__));
 define("ROOT",dirname(APPLICATION_PATH));
 
 /**
@@ -16,5 +15,5 @@ define("ROOT",dirname(APPLICATION_PATH));
 require ROOT.'/vendor/autoload.php';
 
 $app  = new Yaf\Application(ROOT ."/common/conf/application.ini");
-
-$app->bootstrap();
+$app->bootstrap()
+    ->run();
