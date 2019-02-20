@@ -8,12 +8,8 @@
  */
 
 define("APPLICATION_PATH",  __DIR__);
-define("ROOT",dirname(APPLICATION_PATH));
 
-/**
- * 引入composer autoload
- */
-require ROOT.'/vendor/autoload.php';
+require dirname(APPLICATION_PATH).'/common/bootstrap.php';
 
 $app  = new Yaf\Application(ROOT ."/common/conf/application.ini");
 

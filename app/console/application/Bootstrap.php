@@ -25,9 +25,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         $controller = isset($_SERVER['argv'][1]) ? $_SERVER['argv'][1] : 'index';
         $action     = isset($_SERVER['argv'][2]) ? $_SERVER['argv'][2] : 'index';
 
-
         $request = new \Yaf\Request\Simple('cli','Index',$controller,$action,array_slice($_SERVER['argv'],3));
         $dispatcher->dispatch($request);
-
     }
 }
