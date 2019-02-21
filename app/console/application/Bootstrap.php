@@ -12,6 +12,18 @@
  */
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
+    /**加载任务
+     * @param \Yaf\Dispatcher $dispatcher
+     * @throws \Yaf\Exception\TypeError
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initTask(\Yaf\Dispatcher $dispatcher)
+    {
+        $taskList = new Yaf\Config\Ini(APPLICATION_PATH.'/application/conf/task.ini',ini_get('yaf.environ'));
+        \yafr\com\Di::set('tasks',$taskList->toArray());
+    }
+
     /**
      * @param \Yaf\Dispatcher $dispatcher
      * @author Jiang Haiqiang
