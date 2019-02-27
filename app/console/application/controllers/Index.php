@@ -22,10 +22,7 @@ class IndexController extends \Yaf\Controller_Abstract
          * @var \yafr\com\log\File $log
          */
         $log      = \yafr\com\Di::get('log');
-
         $log->info('index');
-
-        echo 'index/index';
     }
 
     /**
@@ -34,7 +31,10 @@ class IndexController extends \Yaf\Controller_Abstract
      */
     public function testAction()
     {
-        var_dump($this->_request->getParams());
-        //echo 'index/test';
+        /**
+         * @var \yafr\com\log\File $log
+         */
+        $log      = \yafr\com\Di::get('log');
+        $log->info('test');
     }
 }

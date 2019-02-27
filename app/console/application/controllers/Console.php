@@ -42,12 +42,14 @@ class ConsoleController extends \Yaf\Controller_Abstract
 
         $log->info('start');
 
-        foreach ($taskList as $task) {
-            $task = array_values($task)[0];
-            if($this->_canExecute($task['pattern'])) {
-                $file = popen(APPLICATION_PATH.'/run.php '.$task['route'].' >/dev/null 2>&1 &', 'r');
-                if($file) {
-                    pclose($file);
+        foreach ($taskList as $list) {
+            foreach ($list as $task) {
+                if($this->_canExecute($task['pattern'])) {
+                    //异步执行php脚本，只有一&执行才是异步
+                    $file = popen(APPLICATION_PATH.'/run.php '.$task['route'].' >/dev/null 2>&1 &', 'r');
+                    if($file) {
+                        pclose($file);
+                    }
                 }
             }
         }
@@ -103,24 +105,24 @@ class ConsoleController extends \Yaf\Controller_Abstract
             return true;
         }
 
-        if(mb_strpos($express,',',null,'utf-8') !== false)
-        {
+        //1,3,5,15
+        if(mb_strpos($express,',',null,'utf-8') !== false) {
             $items=explode(',',$express);
             return in_array($num,$items);
         }
 
-        if(mb_strpos($express,'-',null,'utf-8') !== false)
-        {
+        //1-10
+        if(mb_strpos($express,'-',null,'utf-8') !== false) {
             list($start,$end)=explode('-',$express);
             return ((int)$start <= $num) && ((int)$end >= $num);
         }
 
-        if(mb_strpos($express,'/',null,'utf-8') !== false)
-        {
+        // */2
+        if(mb_strpos($express,'/',null,'utf-8') !== false) {
             list($random,$per)=explode('/',$express);
             return ($num % (int)$per) === 0;
         }
 
-        return $express == (int)$num;
+        return (int)$express === (int)$num;
     }
 }
