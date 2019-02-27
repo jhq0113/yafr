@@ -18,6 +18,13 @@ class IndexController extends \Yaf\Controller_Abstract
      */
     public function indexAction()
     {
+        /**
+         * @var \yafr\com\log\File $log
+         */
+        $log      = \yafr\com\Di::get('log');
+
+        $log->info('index');
+
         echo 'index/index';
     }
 

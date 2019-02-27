@@ -35,8 +35,15 @@ class ConsoleController extends \Yaf\Controller_Abstract
     public function startAction()
     {
         $taskList = \yafr\com\Di::get('tasks');
+        /**
+         * @var \yafr\com\log\File $log
+         */
+        $log      = \yafr\com\Di::get('log');
+
+        $log->info('start');
 
         foreach ($taskList as $task) {
+            $task = array_values($task)[0];
             if($this->_canExecute($task['pattern'])) {
                 $file = popen(APPLICATION_PATH.'/run.php '.$task['route'].' >/dev/null 2>&1 &', 'r');
                 if($file) {

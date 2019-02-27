@@ -12,6 +12,18 @@
  */
 class Bootstrap extends \Yaf\Bootstrap_Abstract
 {
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initLog(\Yaf\Dispatcher $dispatcher)
+    {
+        $logConfig = $dispatcher->getApplication()->getConfig()->toArray()['log'];
+        $logConfig['fileName'] = $logConfig['logPath'].'/'.date('Y-m').'/'.date('d').'/console.log';
+        \yafr\com\Di::set('log',$logConfig);
+    }
+
     /**加载任务
      * @param \Yaf\Dispatcher $dispatcher
      * @throws \Yaf\Exception\TypeError
