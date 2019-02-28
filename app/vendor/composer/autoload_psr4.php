@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'yafr\\' => array($vendorDir . '/jhq0113/yaf-yar/src'),
+    'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
 );

@@ -125,4 +125,23 @@ class ConsoleController extends \Yaf\Controller_Abstract
 
         return (int)$express === (int)$num;
     }
+
+    /**
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function testAction()
+    {
+        $result['insert']=ImportRecordModel::insert([
+            'logic_type_id' => 2,
+            'logic_id'      => time()
+        ]);
+        $result['id'] = ImportRecordModel::getLastInsertId();
+
+        $result['select'] = ImportRecordModel::getOne([
+            'id' =>100
+        ]);
+
+        var_dump($result);
+    }
 }

@@ -11,12 +11,20 @@ class ComposerStaticInitac27fcafd82c5a9ea76f8f9036d03de5
         array (
             'yafr\\' => 5,
         ),
+        'M' => 
+        array (
+            'Medoo\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'yafr\\' => 
         array (
             0 => __DIR__ . '/..' . '/jhq0113/yaf-yar/src',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
     );
 

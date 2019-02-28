@@ -10,5 +10,8 @@ define("ROOT",dirname(__DIR__));
 
 /**
  * 引入composer autoload
+ * @var Composer\Autoload\ClassLoader $loader
  */
-require ROOT.'/vendor/autoload.php';
+$loader =require ROOT.'/vendor/autoload.php';
+
+$loader->setPsr4('common\\',[ __DIR__ ]);

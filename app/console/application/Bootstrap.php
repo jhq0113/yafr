@@ -17,6 +17,18 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
      */
+    public function _initDb(\Yaf\Dispatcher $dispatcher)
+    {
+        $dbConfig = $dispatcher->getApplication()->getConfig()->get('db');
+        $db = new \Medoo\Medoo($dbConfig->toArray());
+        \extend\Di::set('db',$db);
+    }
+
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
     public function _initLog(\Yaf\Dispatcher $dispatcher)
     {
         $logConfig = $dispatcher->getApplication()->getConfig()->toArray()['log'];
