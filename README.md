@@ -48,5 +48,5 @@
 
 ### yar
 #### [1.yar概述](https://github.com/jhq0113/yafr/blob/master/docs/yar/1.yar概述.md)
-#### [2.yar安装及Hello World](https://github.com/jhq0113/yafr/blob/master/docs/yar/2.yar安装及Hello World.md)
+#### [2.yar安装及Hello World](https://github.com/jhq0113/yafr/blob/master/docs/yar/2.yar安装及HelloWorld.md)
 #### [3.yaf中集成yar](https://github.com/jhq0113/yafr/blob/master/docs/yar/3.yaf中集成yar.md)
