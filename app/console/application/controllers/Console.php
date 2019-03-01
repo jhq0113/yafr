@@ -34,7 +34,8 @@ class ConsoleController extends \Yaf\Controller_Abstract
      */
     public function startAction()
     {
-        $taskList = \yafr\com\Di::get('tasks');
+        //$taskList = \yafr\com\Di::get('tasks');
+        $taskList = CronModel::select();
         /**
          * @var \yafr\com\log\File $log
          */
@@ -42,14 +43,12 @@ class ConsoleController extends \Yaf\Controller_Abstract
 
         $log->info('start');
 
-        foreach ($taskList as $list) {
-            foreach ($list as $task) {
-                if($this->_canExecute($task['pattern'])) {
-                    //异步执行php脚本，只有一&执行才是异步
-                    $file = popen(APPLICATION_PATH.'/run.php '.$task['route'].' >/dev/null 2>&1 &', 'r');
-                    if($file) {
-                        pclose($file);
-                    }
+        foreach ($taskList as $task) {
+            if($this->_canExecute($task['pattern'])) {
+                //异步执行php脚本，只有一&执行才是异步
+                $file = popen(APPLICATION_PATH.'/run.php '.$task['route'].' >/dev/null 2>&1 &', 'r');
+                if($file) {
+                    pclose($file);
                 }
             }
         }
@@ -124,5 +123,18 @@ class ConsoleController extends \Yaf\Controller_Abstract
         }
 
         return (int)$express === (int)$num;
+    }
+
+    public function addAction()
+    {
+        CronModel::insert([
+            'name'    => 'test',
+            //每两个小时执行一次，前面的一定要有值
+            'pattern' => '0 */2 * * *',
+            'route'   => 'index test'
+        ]);
+
+        $result = CronModel::select();
+        var_dump($result);
     }
 }

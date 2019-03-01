@@ -21,7 +21,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     {
         $dbConfig = $dispatcher->getApplication()->getConfig()->get('db');
         $db = new \Medoo\Medoo($dbConfig->toArray());
-        \extend\Di::set('db',$db);
+        \yafr\com\Di::set('db',$db);
     }
 
     /**

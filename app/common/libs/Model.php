@@ -8,7 +8,7 @@
 
 namespace common\libs;
 
-use extend\Di;
+use yafr\com\Di;
 use Medoo\Medoo;
 
 /**
