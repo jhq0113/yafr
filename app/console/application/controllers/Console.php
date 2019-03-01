@@ -42,7 +42,7 @@ class ConsoleController extends \Yaf\Controller_Abstract
 
         $log->info('start');
 
-        foreach ($taskList as $task) {
+        foreach ($taskList as $list) {
             foreach ($list as $task) {
                 if($this->_canExecute($task['pattern'])) {
                     //异步执行php脚本，只有一&执行才是异步
