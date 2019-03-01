@@ -45,3 +45,8 @@
 #### [3.console应用实现cron任务配置解析](https://github.com/jhq0113/yafr/blob/master/docs/cron/3.console应用实现cron任务配置解析.md)
 #### [4.cron任务配置多存储介质](https://github.com/jhq0113/yafr/blob/master/docs/cron/4.cron任务配置多存储介质.md)
 #### [5.实现秒级任务](https://github.com/jhq0113/yafr/blob/master/docs/cron/5.实现秒级任务.md)
+
+### yar
+#### [1.yar概述](https://github.com/jhq0113/yafr/blob/master/docs/yar/1.yar概述.md)
+#### [2.yar安装及Hello World](https://github.com/jhq0113/yafr/blob/master/docs/yar/2.yar安装及Hello World.md)
+#### [3.yaf中集成yar](https://github.com/jhq0113/yafr/blob/master/docs/yar/3.yaf中集成yar.md)
