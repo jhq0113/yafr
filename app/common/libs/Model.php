@@ -68,7 +68,7 @@ class Model
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
      */
-    public static function select($where,$columns='*')
+    public static function select($where=null,$columns='*')
     {
         return static::getDb()->select(static::$tableName,$columns,$where);
     }
