@@ -1,9 +1,3 @@
-## [目录](https://github.com/jhq0113/yafr/blob/master/docs/index.md)
-
-## [2.yar安装及Hello World](https://github.com/jhq0113/yafr/blob/master/docs/yar/2.yar安装及HelloWorld.md)
-
-# rpc
-```php
 <?php
 /**
  * Created by PhpStorm.
@@ -44,17 +38,3 @@ class Rpc
         }
     }
 }
-```
-
-## 应用结构
--- rpc
-
----- application
-
--------- service
-
--------- Bootstrap.php
-
----- public
-
--------- index.php

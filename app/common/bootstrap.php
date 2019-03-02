@@ -15,3 +15,5 @@ define("ROOT",dirname(__DIR__));
 $loader =require ROOT.'/vendor/autoload.php';
 
 $loader->setPsr4('common\\',[ __DIR__ ]);
+
+return $loader;
