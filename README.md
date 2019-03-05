@@ -3,6 +3,8 @@
 ## 视频课程地址
 [https://edu.csdn.net/course/detail/9933](https://edu.csdn.net/course/detail/9933)
 
+## QQ群 【621674014】
+
 ## 课程文档
 [https://github.com/jhq0113/yafr](https://github.com/jhq0113/yafr)
 
