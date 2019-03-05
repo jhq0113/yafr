@@ -32,7 +32,7 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
     public function _initLog(\Yaf\Dispatcher $dispatcher)
     {
         $logConfig = $dispatcher->getApplication()->getConfig()->toArray()['log'];
-        $logConfig['fileName'] = $logConfig['logPath'].'/'.date('Y-m').'/'.date('d').'/console.log';
+        $logConfig['fileName'] = $logConfig['logPath'].'/'.date('Y-m').'/'.date('d').'/rpc.log';
         \yafr\com\Di::set('log',$logConfig);
     }
 
