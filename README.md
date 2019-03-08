@@ -58,3 +58,9 @@
 #### [2.安装配置](https://github.com/jhq0113/yafr/blob/master/docs/yac/2.安装配置.md)
 #### [3.api](https://github.com/jhq0113/yafr/blob/master/docs/yac/3.api.md)
 #### [4.redis+yac二级缓存](https://github.com/jhq0113/yafr/blob/master/docs/yac/4.redis-yac二级缓存.md)
+
+### task
+#### [1.生产者消费者](https://github.com/jhq0113/yafr/blob/master/docs/task/1.生产者消费者.md)
+#### [2.通用任务系统设计](https://github.com/jhq0113/yafr/blob/master/docs/task/2.通用任务系统设计.md)
+
+
