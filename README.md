@@ -61,6 +61,6 @@
 
 ### task
 #### [1.生产者消费者](https://github.com/jhq0113/yafr/blob/master/docs/task/1.生产者消费者.md)
-#### [2.通用任务系统设计](https://github.com/jhq0113/yafr/blob/master/docs/task/2.通用任务系统设计.md)
+#### [2.通用任务系统](https://github.com/jhq0113/yafr/blob/master/docs/task/2.通用任务系统.md)
 
 
