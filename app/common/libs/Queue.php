@@ -68,12 +68,14 @@ class Queue
             $this->_redis = new \Redis();
             $connectStatus = $this->_redis->connect($this->host,$this->port);
             if(!$connectStatus) {
+                $this->_redis = null;
                 return false;
             }
 
             if(!empty($this->auth)) {
                 $authStatus = $this->_redis->auth($this->auth);
                 if(!$authStatus) {
+                    $this->_redis = null;
                     return false;
                 }
             }

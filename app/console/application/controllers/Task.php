@@ -117,4 +117,31 @@ class TaskController extends \Yaf\Controller_Abstract
 
         $this->_doTask();
     }
+
+    /**
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function addAction()
+    {
+        \yafr\com\Di::get('log')->info('add');
+
+        $config = TaskConfigModel::getOne([
+            'id' => 2
+        ]);
+
+        if(empty($config)) {
+            return;
+        }
+
+        $this->_config = $config;
+
+        $this->_queue = new \common\libs\Queue();
+        $this->_queue->host = $this->_config['host'];
+        $this->_queue->port = $this->_config['port'];
+        $this->_queue->auth = $this->_config['auth'];
+        $this->_queue->db   = $this->_config['db'];
+
+        $this->_doTask();
+    }
 }

@@ -87,4 +87,30 @@ class IndexController extends \Yaf\Controller_Abstract
           $log->info('select:'.json_encode($data,JSON_UNESCAPED_UNICODE));
        });
     }
+
+    public function pushAction()
+    {
+        $queue = new \common\libs\Queue();
+        $queue->host = '10.20.76.58';
+        $queue->port = 6379;
+        $queue->db   = 0;
+
+        $queue->push('msg',[
+            'userId'   => time(),
+            'uniquid'  => uniqid()
+        ]);
+    }
+
+    public function addAction()
+    {
+        $queue = new \common\libs\Queue();
+        $queue->host = '10.20.76.58';
+        $queue->port = 6379;
+        $queue->db   = 0;
+
+        $queue->push('jifen:add',[
+            'userId'   => time(),
+            'uniquid'  => uniqid()
+        ]);
+    }
 }
