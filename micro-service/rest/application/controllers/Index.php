@@ -12,5 +12,16 @@
  */
 class IndexController extends \Yaf\Controller_Abstract
 {
-
+    /**
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function indexAction()
+    {
+        exit(json_encode([
+            'status' => '200',
+            'data'   => [],
+            'msg'    => 'operator success'
+        ]));
+    }
 }
