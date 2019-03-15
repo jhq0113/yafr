@@ -1,0 +1,19 @@
+{
+  "name":"jhq0113/yafr",
+  "description": "rpc",
+  "keywords": ["php", "yaf","yar","mvc","di","ioc"],
+  "license": "MIT",
+  "homepage":"https://github.com/jhq0113/yafr",
+  "type": "framework",
+  "authors": [
+    {
+      "name": "Jiang Haiqiang",
+      "email": "jhq0113@163.com",
+      "homepage": "https://github.com/jhq0113",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "jhq0113/yaf-yar":"1.0.3"
+  }
+}
