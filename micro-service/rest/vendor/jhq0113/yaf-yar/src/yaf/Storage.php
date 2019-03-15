@@ -13,12 +13,12 @@ namespace yafr\yaf;
  * @package yafr\yaf
  * User Jiang Haiqiang
  */
-abstract class Storage
+interface Storage
 {
     /**
      * @return mixed
      * @author Jiang Haiqiang
      * @email  jhq0113@163.com
      */
-    abstract public function getList();
+    public function getList();
 }

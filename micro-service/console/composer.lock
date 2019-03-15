@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e40e2da31067e511b35db0385770d72b",
+    "content-hash": "a9c1c5ebed3a218e61fde6fc970ae1df",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -67,16 +67,16 @@
         },
         {
             "name": "jhq0113/yaf-yar",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jhq0113/yaf-yar.git",
-                "reference": "48bf733cbb53d2da222e3eaa83d1661f9314fb17"
+                "reference": "774d0556bb432260172de096749b75c9aa91fa7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jhq0113/yaf-yar/zipball/48bf733cbb53d2da222e3eaa83d1661f9314fb17",
-                "reference": "48bf733cbb53d2da222e3eaa83d1661f9314fb17",
+                "url": "https://api.github.com/repos/jhq0113/yaf-yar/zipball/774d0556bb432260172de096749b75c9aa91fa7a",
+                "reference": "774d0556bb432260172de096749b75c9aa91fa7a",
                 "shasum": ""
             },
             "require": {
@@ -111,7 +111,7 @@
                 "yaf",
                 "yar"
             ],
-            "time": "2019-03-13T14:26:15+00:00"
+            "time": "2019-03-15T14:27:30+00:00"
         }
     ],
     "packages-dev": [],

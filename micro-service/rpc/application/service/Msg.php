@@ -9,14 +9,14 @@
 namespace service;
 
 
-use common\libs\Rpc;
+use yafr\yaf\Yar;
 
 /**
  * Class Msg
  * @package service
  * User Jiang Haiqiang
  */
-class Msg extends Rpc
+class Msg extends Yar
 {
     /**
      * @param $params

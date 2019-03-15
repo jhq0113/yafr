@@ -8,15 +8,14 @@
 
 namespace service;
 
-
-use common\libs\Rpc;
+use yafr\yaf\Yar;
 
 /**
  * Class Cron
  * @package service
  * User Jiang Haiqiang
  */
-class Cron extends Rpc
+class Cron extends Yar
 {
     /**
      * @author Jiang Haiqiang
