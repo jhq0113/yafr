@@ -62,24 +62,24 @@
     },
     {
         "name": "jhq0113/yaf-yar",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
+        "version": "1.0.5",
+        "version_normalized": "1.0.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/jhq0113/yaf-yar.git",
-            "reference": "774d0556bb432260172de096749b75c9aa91fa7a"
+            "reference": "b17c230812962d38c10c758966648cff3915b070"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/jhq0113/yaf-yar/zipball/774d0556bb432260172de096749b75c9aa91fa7a",
-            "reference": "774d0556bb432260172de096749b75c9aa91fa7a",
+            "url": "https://api.github.com/repos/jhq0113/yaf-yar/zipball/b17c230812962d38c10c758966648cff3915b070",
+            "reference": "b17c230812962d38c10c758966648cff3915b070",
             "shasum": ""
         },
         "require": {
             "catfan/medoo": "*",
             "php": "^7.1"
         },
-        "time": "2019-03-15T14:27:30+00:00",
+        "time": "2019-03-16T14:15:08+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

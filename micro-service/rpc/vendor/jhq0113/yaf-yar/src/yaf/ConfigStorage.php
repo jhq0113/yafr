@@ -13,7 +13,7 @@ namespace yafr\yaf;
  * @package yafr\yaf
  * User Jiang Haiqiang
  */
-class ConfigStorage extends Storage
+class ConfigStorage implements Storage
 {
     /**
      * @var string
