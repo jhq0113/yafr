@@ -7,3 +7,5 @@
  */
 
 require dirname(APPLICATION_PATH).'/vendor/autoload.php';
+
+require APPLICATION_PATH.'/sdk/Service.php';

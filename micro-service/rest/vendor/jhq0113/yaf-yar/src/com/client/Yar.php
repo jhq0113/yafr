@@ -8,6 +8,8 @@
 
 namespace yafr\com\client;
 
+use yafr\com\helpers\HttpHelper;
+
 /**
  * Class Yar
  * @package yafr\com\client
@@ -53,6 +55,8 @@ class Yar
      */
     public function call($method,array $params=[])
     {
+        $params['traceId'] = HttpHelper::getTraceId();
+
         return $this->getClient()->call($method,[ $params ]);
     }
 }

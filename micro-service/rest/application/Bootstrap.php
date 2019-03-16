@@ -33,4 +33,29 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
         unset($logConfig['logPath']);
         Di::set('log',$logConfig);
     }
+
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initRedis(\Yaf\Dispatcher $dispatcher)
+    {
+        $redisConfig = \Yaf\Application::app()->getConfig()->toArray()['redis'];
+        $redisConfig['class']  = \yafr\com\cache\Redis::class;
+        Di::set('redis',$redisConfig);
+    }
+
+    /**
+     * @param \Yaf\Dispatcher $dispatcher
+     * @author Jiang Haiqiang
+     * @email  jhq0113@163.com
+     */
+    public function _initService(\Yaf\Dispatcher $dispatcher)
+    {
+        Di::set('service',[
+            'class'  => 'sdk\Service',
+            'redis'  => Di::get('redis')
+        ]);
+    }
 }
