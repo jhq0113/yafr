@@ -1,7 +1,8 @@
 # yaf+yar企业微服务解决方案
 
 ## 视频课程地址
-[https://edu.csdn.net/course/detail/9933](https://edu.csdn.net/course/detail/9933)
+[51cto](https://edu.51cto.com/sd/89ad6)
+[csdn](https://edu.csdn.net/course/detail/9933)
 
 ## QQ群 【621674014】
 
