@@ -4,11 +4,19 @@
 
 [https://404.360tryst.com/](https://404.360tryst.com/)
 
-## 视频课程地址
-[51cto](https://edu.51cto.com/sd/89ad6)
-[csdn](https://edu.csdn.net/course/detail/9933)
+## 我的主页
+
+![image](/51cto-yafr.png) 
+
+![image](/me.png) 
+
+# 公众号
+
+![image](/public.jpg)
 
 ## QQ群 【621674014】
+
+![image](/qq.png)
 
 ## 课程文档
 [https://github.com/jhq0113/yafr](https://github.com/jhq0113/yafr)
